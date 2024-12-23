@@ -22,7 +22,7 @@ Ubuntu 20.04.1
 ## 2. Prepare data
 
 We employ the pre-trained I3D model to extract the Charades-STA features, while C3D models extract the ActivityNet-Caption.
-You can download the video, text CLIP features and pretrained model at the google drive:[Charades](https://drive.google.com/drive/folders/1bJuOrB3sWhQNyAm4GhzI9SQPxs0-wkNT](https://drive.google.com/drive/folders/1L-ALQ5yhN-aCecHbSAbYQMHHGOemQiJw?usp=sharing).  
+You can download the video, text CLIP features and pretrained model at the google drive:[Charades](https://drive.google.com/drive/folders/1L-ALQ5yhN-aCecHbSAbYQMHHGOemQiJw?usp=sharing).  
 Before training, please download the features and put them into the data/.
 
 
