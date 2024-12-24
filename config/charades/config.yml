@@ -1,3 +1,4 @@
+# TO DO: Update Config
 evaluation:
   evaluate_after: -1
   every_eval: 1
@@ -17,22 +18,22 @@ misc:
   vis_every: 0
   seed: 0
 model:
-  noise_level: 0.5
-  sigma: 2
-  gamma: 0.2
+  noise_level: 0.1
+  sigma: 9
+  gamma: 0.5
   tag_weight: 1.
   num_proposals: 1
   learned_noise: true
-  l1_threshold: 0.3
-  att_div_alpha: 1
-  att_div_lambda: 0.8
+  l1_threshold: 0.5
+  att_div_alpha: 0.5
+  att_div_lambda: 0.146
   l1_alpha: 1.
-  nce_tau: 0.25
-  nce_alpha: 1
-  proposal_nce_alpha: 1
-  intra_nce_alpha: 1
-  intra_margin_1: 0.4
-  intra_margin_2: 0.5
+  nce_tau: 0.07
+  nce_alpha: 0.1
+  proposal_nce_alpha: 0.5
+  intra_nce_alpha: 0.1
+  intra_margin_1: 0.25
+  intra_margin_2: 0.3
   use_clip_mask: false
   checkpoint_path: ''
   dqa_lambda: 0.3
@@ -124,10 +125,10 @@ test_loader:
   num_segment: 200
   split: test
   sample_num: 10
-  video_feature_path: data/charades/i3d_features.hdf5
+  video_feature_path: /data/i3d_features.hdf5
   anno_path: data/charades/pseudo/charades_test_original.json
-  clip_video_feature_path: data/charades/charades_clip_video.h5
-  clip_text_feature_path: data/charades/charades_clip_text.h5
+  clip_video_feature_path: /data/charades_clip_video.h5
+  clip_text_feature_path: /data/charades_clip_text.h5
   word_frequency_threshold: 1
 train_loader:
   batch_size: 128
@@ -139,9 +140,9 @@ train_loader:
   num_segment: 200
   split: train
   sample_num: 10
-  video_feature_path: data/charades/i3d_features.hdf5
-  clip_video_feature_path: data/charades/charades_clip_video.h5
+  video_feature_path: /data/i3d_features.hdf5
+  clip_video_feature_path: /data/charades_clip_video.h5
   anno_path: data/charades/pseudo/charades_train_pseudo_unique.json
-  sentences_corpus_feat_path: data/charades/charades_corpus_feat.npy
+  sentences_corpus_feat_path: /data/charades_corpus_feat.npy
   use_corpus: true
   word_frequency_threshold: 1
